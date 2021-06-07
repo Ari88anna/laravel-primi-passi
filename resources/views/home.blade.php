@@ -8,5 +8,19 @@
 </head>
 <body>
     <h1>Hello world!</h1>
+
+    <p>{{ $sottotitolo }}</p>
+
+    <ul>
+        @foreach ($links as $link)
+
+            <li>
+                
+                <a href="">{{ $link }}</a>
+               
+            </li>
+        
+        @endforeach
+    </ul>
 </body>
 </html>

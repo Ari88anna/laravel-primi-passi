@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {    
-    return view('home');
+Route::get('/', function () { 
+    $menu = [
+        'sottotitolo' => 'primi passi con Laravel',
+        'links' => [
+            'Installa',
+            'Documentazione'
+        ]
+
+    ];  
+
+    return view('home', $menu);
 });
