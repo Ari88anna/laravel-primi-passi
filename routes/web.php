@@ -20,8 +20,12 @@ Route::get('/', function () {
             'Installa',
             'Documentazione'
         ]
-
-    ];  
+    ]; 
 
     return view('home', $menu);
-});
+})->name('homepage');
+
+
+Route::get('/installa', function () { 
+    return view('installa');
+})->name('installazione');

@@ -16,7 +16,7 @@
 
             <li>
                 
-                <a href="">{{ $link }}</a>
+                <a href="{{ route('installazione') }}">{{ $link }}</a>
                
             </li>
         
